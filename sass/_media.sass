@@ -1,0 +1,47 @@
+@media (max-width:1200px)
+  .container
+    max-width: 950px
+  .header
+    &-menu
+      &__item
+        &:not(:last-child)
+          margin-right: 15px
+@media (max-width:992px)
+  .container  
+    max-width: 740px
+  .header
+    &-menu
+      &__link
+        font-size: 12px
+    &-logo
+      &__image
+        width: 30px
+      &__text
+        width: 90px
+  .search
+    &__input
+      width: 180px
+@media (max-width:768px)
+  .container
+    max-width: 576px
+  .header
+    &__wrapper
+      &--mobile
+        flex-direction: column
+    &-menu
+      display: none
+      &__link
+        font-size: 14px
+    &-logo
+      &__image
+        width: 40px
+      &__text
+        width: 100px
+    &__menu
+      &-button
+        display: flex
+      &--mobile
+        display: flex
+        flex-direction: column
+  .search
+    display: none

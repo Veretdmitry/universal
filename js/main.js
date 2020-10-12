@@ -15,4 +15,10 @@ $(function () {
     $(activeContent).find('.tabs-button').css('background-color', $(this).find('.tabs-cards__title').css('color'));
   });
 
+// header__menu-button
+  $('.header__menu-button').on('click', function(){
+    $('.header').toggleClass('header--cover');
+    $('.header-wrapper').toggleClass('.header__wrapper--mobile');
+    $('.header-menu').toggleClass('.header__menu--mobile');
+  });
 });

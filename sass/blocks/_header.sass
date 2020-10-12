@@ -22,6 +22,18 @@
       line-height: 20px
       text-decoration: none
       color: $light
+  &__menu
+    &-button
+      display: none
+
+  &--cover
+    position: fixed
+    top: 0
+    bottom: 0
+    right: 0
+    left: 0
+    z-index: 1000
+
 
 .search
   position: relative
@@ -54,4 +66,15 @@
     top: 50%
     right: 11px
     transform: translateY(-50%)
+
+.lines
+  display: flex
+  flex-direction: column
+  justify-content: space-between
+  width: 20px
+  height: 10px
+  &__item
+    height: 1px
+    width: 100%
+    background-color: $light
 
