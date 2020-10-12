@@ -1,0 +1,147 @@
+.tabs
+  background-color: $dark
+  height: 475px
+  position: relative
+  &-wrapper
+    position: absolute
+    z-index: 1
+    top: 30px
+    left: 0
+    right: 0
+    display: flex
+    justify-content: space-between
+    border-radius: 10px
+    overflow: hidden
+  &-menu
+    background-color: $light
+    max-width: 263px
+    max-height: 570px
+    &__title
+      font-weight: 900
+      font-size: 14px
+      line-height: 20px
+      letter-spacing: 0.5px
+      text-transform: uppercase
+      margin: 0
+      padding: 20px 25px
+  &-content
+    display: flex
+    flex-direction: column
+    flex-basis: 100%
+    color: $light
+    &__text
+      max-width: 598px
+    &__item
+      position: relative
+      display: none
+      flex-direction: column
+      justify-content: space-between
+      height: 100%
+      width: 100%
+      margin: 0
+      padding-bottom: 100px
+      padding-left: 55px
+      padding-top: 55px
+      padding-right: auto
+      &--active
+        display: flex
+        order: 1
+    &__bg
+      position: absolute
+      z-index: -1
+      top: 0
+      bottom: 0
+      right: 0
+      left: 0
+      width: inherit
+      height: inherit
+    &__theme
+      font-weight: 900
+      font-size: 12px
+      line-height: 15px
+      display: flex
+      align-items: center
+      letter-spacing: 0.5px
+      text-transform: uppercase
+      color: $blue
+    &__title
+      font-family: Roboto Slab
+      font-style: normal
+      font-weight: bold
+      font-size: 40px
+      line-height: 50px
+      display: flex
+      align-items: center
+      color: #FFFFFF
+      margin: 0
+      margin-top: 20px
+      margin-bottom: 50px
+  &-button
+    background-color: $blue
+    color: $light
+    padding: 10px 20px
+    border-radius: 20px
+    cursor: pointer
+    &__text
+      font-style: normal
+      font-weight: 900
+      font-size: 14px
+      line-height: 20px
+      margin-right: 5px
+  &-user
+    display: flex
+    align-items: center
+    &__name
+      font-style: normal
+      font-weight: normal
+      font-size: 14px
+      line-height: 20px
+    &__job-name
+      font-style: normal
+      font-weight: normal
+      font-size: 12px
+      line-height: 15px
+      opacity: 0.4
+    &__text
+      display: flex
+      flex-direction: column
+
+    &__image
+      height: 45px
+      width: 45px
+      object-fit: cover
+      border-radius: 50%
+      margin-right: 10px
+  &-cards
+    &__item
+      height: 99px
+      padding: 17px 25px 19px 25px
+      border-top: 1px solid $line-color
+      cursor: pointer
+      &--active
+        background-color: #F5F5F5
+    &__link
+      text-decoration: none
+    &__title
+      font-weight: 900
+      font-size: 12px
+      line-height: 15px
+      margin-bottom: 8px
+      text-transform: uppercase
+      &--green
+        color: #3DC47E
+      &--bluegreen
+        color: #3BBDC4
+      &--purple
+        color: #AC8EE3
+      &--orange
+        color: #FFA34D
+      &--greyblue
+        color: #6E99AE
+    &__text
+      font-style: normal
+      font-weight: normal
+      font-size: 14px
+      line-height: 20px
+      margin: 0
+      color: $tabs-text-color
