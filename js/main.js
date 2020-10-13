@@ -3,7 +3,9 @@ $(function () {
   var tabsContent = $('.tabs-content__item');
   tabsItem.on('click', function(event) {
     var activeContent = $(this).attr('data-target');
-    event.preventDefault();
+    if ($(window).width() < 576) {
+      window.location.hash = activeContent;
+    }; 
     $(this).removeAttr('href');
     tabsContent.removeClass('tabs-content__item--active');
     tabsItem.removeClass('tabs-cards__item--active');
@@ -18,7 +20,13 @@ $(function () {
 // header__menu-button
   $('.header__menu-button').on('click', function(){
     $('.header').toggleClass('header--cover');
-    $('.header-wrapper').toggleClass('.header__wrapper--mobile');
-    $('.header-menu').toggleClass('.header__menu--mobile');
+    $('.header-wrapper').toggleClass('header-wrapper_mobile');
+    $('.header-menu').toggleClass('header-menu_mobile');
+    $('.search').toggleClass('search_mobile');
+    $('.header__logo').toggleClass('header__logo--mobile');
+    $('.header__menu-button').toggleClass('header__menu-button_click');
+    $('.lines').toggleClass('lines_mobile');
   });
+
+
 });

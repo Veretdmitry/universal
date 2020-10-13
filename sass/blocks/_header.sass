@@ -5,6 +5,8 @@
     align-items: center
     justify-content: space-between
     padding: 15px 0
+    &_mobile
+      flex-direction: column
   &-logo
     display: flex
     align-itens: center
@@ -22,11 +24,15 @@
       line-height: 20px
       text-decoration: none
       color: $light
+
   &__menu
     &-button
       display: none
+      width: 20px
+      height: 10px
 
   &--cover
+    transition: 1s
     position: fixed
     top: 0
     bottom: 0
@@ -68,11 +74,10 @@
     transform: translateY(-50%)
 
 .lines
+  height: 100%
   display: flex
   flex-direction: column
   justify-content: space-between
-  width: 20px
-  height: 10px
   &__item
     height: 1px
     width: 100%
