@@ -1,5 +1,7 @@
 .header
   background-color: $dark
+  height: 70px
+  transition: 0.5s
   &-wrapper
     display: flex
     align-items: center
@@ -16,28 +18,44 @@
     display: flex
     align-items: center
     &__item
+      position: relative
       &:not(:last-child)
         margin-right: 30px
+      &--light
+        &:after 
+          display: block
+          content: ""
+          background-color: $light
+          height: 3px
+          width: 0%
+          left: 50%
+          position: absolute
+          transition: width .2s ease-in-out
+          transform: translateX(-50%)
+        &:hover:after,
+        &:focus:after 
+          width: 100%
     &__link
       font-weight: 900
       font-size: 14px
       line-height: 20px
       text-decoration: none
-      color: $light
+      &--light
+        color: $light
 
   &__menu
     &-button
       display: none
       width: 20px
-      height: 10px
+      height: 12px
+      cursor: pointer
 
   &--cover
-    transition: 1s
     position: fixed
-    top: 0
-    bottom: 0
     right: 0
     left: 0
+    top: 0
+    height: 100%
     z-index: 1000
 
 
@@ -55,11 +73,12 @@
     line-height: 20px
     height: 39px
     width: 263px
-    background-color: $search-color
     border: none
-    color: #BCBFC2
     padding-left: 25px
     padding-right: 40px
+    &--light
+      background-color: $search-color
+      color: #ffffff
     &:focus
       outline: none
     &::placeholder
@@ -75,11 +94,11 @@
 
 .lines
   height: 100%
-  display: flex
-  flex-direction: column
-  justify-content: space-between
   &__item
-    height: 1px
+    height: 2px
     width: 100%
     background-color: $light
+    margin: 0
+    &:not(:last-child)
+      margin-bottom: 3px
 

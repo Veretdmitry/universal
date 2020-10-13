@@ -22,16 +22,19 @@
     &__input
       width: 180px
   .tabs
+    &--mobile
+      margin-top: 70px
     &-wrapper
       flex-direction: column
       height: 570px
+      top: 15px
     &-menu
       flex-basis: 100%
       max-width: 100%
       order: 1
       flex-direction: row
       align-items: center
-      max-height: 99px
+      max-height: 110px
     &-content
       order: 2
       &__item
@@ -44,13 +47,15 @@
     &-cards
       flex-direction: row
       max-height: inherit
-      min-height: 99px
+      min-height: 110px
       overflow-y: hidden
       &__item
         min-width: 263px
         max-width: 263px
-        border-left: 2px solid $line-color
+        height: 110px
         overflow-y: scroll
+        border-left: 2px solid $line-color
+        border-top: none
 
 @media (max-width:768px)
   .container

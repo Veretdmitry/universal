@@ -26,6 +26,7 @@ $(function () {
     $('.header__logo').toggleClass('header__logo--mobile');
     $('.header__menu-button').toggleClass('header__menu-button_click');
     $('.lines').toggleClass('lines_mobile');
+    $('.tabs').toggleClass('tabs--mobile');
   });
 
 

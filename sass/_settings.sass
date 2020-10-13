@@ -1,13 +1,15 @@
 *
   box-sizing: border-box
   &::-webkit-scrollbar
-    width: 12px
+    width: 4px
+    height: 4px
     &-thumb
       border-top: 1px solid #777
       border-right: 1px solid #777
       border-bottom: 1px solid #777
       border-left: 2px solid #777
       background-color: #aaa
+      border-radius: 10px
       &:hover
         border-top: 1px solid #555
         border-right: 1px solid #555
@@ -16,6 +18,8 @@
         background-color: #777
     &-track
       border-width: 0
+      height: 4px
+      width: 4px
       &:hover
         border-left: solid 1px #aaa
         background-color: #eee
@@ -33,3 +37,7 @@
   padding-left: 0
 body
   font-family:  'Lato'
+  &::-webkit-scrollbar
+    width: 8px
+    &-thumb
+      border-radius: 0
