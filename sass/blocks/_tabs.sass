@@ -30,10 +30,21 @@
       color: $dark
 
   &-content
+    position: relative
     display: flex
     flex-direction: column
     flex-basis: 100%
     color: $light
+    &::after
+      content: ''
+      position: absolute
+      top: 0
+      bottom: 0
+      left: 0
+      right: 0
+      background-color: #40303D
+      opacity: 0.35
+      z-index: -1
     &__text
       max-width: 598px
     &__item
@@ -53,7 +64,7 @@
         order: 1
     &__bg
       position: absolute
-      z-index: -1
+      z-index: -2
       top: 0
       bottom: 0
       right: 0
@@ -82,12 +93,16 @@
       margin: 0
       margin-top: 20px
       margin-bottom: 50px
+      cursor: pointer
   &-button
+    border-radius: 20px
+    cursor: pointer
     background-color: $blue
     color: $light
     padding: 10px 20px
-    border-radius: 20px
-    cursor: pointer
+    transition: 0.2s
+    &:hover
+      opacity: 0.8
     &__text
       font-style: normal
       font-weight: 900

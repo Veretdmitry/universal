@@ -1,0 +1,25 @@
+.freshnews
+  background-color: $dark
+  border-radius: 10px
+  padding: 25px 0 30px 0
+  display: flex
+  grid-column: span 4
+  grid-row: 1/2
+  &__item
+    display: flex
+    align-items: center
+    padding: 0 25px
+    text-decoration: none
+    flex-basis: 25%
+    &:not(:last-child)
+      border-right: 1px solid $tabs-text-color
+  &__image
+    width: 65px
+    height: 65px
+    margin-left: 15px
+  &__title
+    font-style: normal
+    font-weight: 900
+    font-size: 14px
+    line-height: 20px
+    color: $light

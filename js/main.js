@@ -1,10 +1,13 @@
 $(function () {
   var tabsItem = $('.tabs-cards__item');
   var tabsContent = $('.tabs-content__item');
+  tabsContent.find('.tabs-content__title, .tabs-button').on('click', function(){
+    window.location = 'articles.html';
+  });
   tabsItem.on('click', function(event) {
     var activeContent = $(this).attr('data-target');
     if ($(window).width() < 576) {
-      window.location.hash = activeContent;
+      window.location = 'articles.html';
     }; 
     $(this).removeAttr('href');
     tabsContent.removeClass('tabs-content__item--active');
