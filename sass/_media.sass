@@ -13,6 +13,11 @@
     &-menu
       &__link
         font-size: 12px
+      &__item
+        &:hover:after,
+        &:focus:after 
+          width: 0%
+          
     &-logo
       &__image
         width: 30px
@@ -44,6 +49,9 @@
         margin-bottom: 20px
       &__text
         max-width: 100%
+    &-button
+      &:hover
+        opacity: 1
     &-cards
       flex-direction: row
       max-height: inherit
