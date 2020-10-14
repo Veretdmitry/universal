@@ -1,7 +1,111 @@
 .popular
+  position: relative
+  display: flex
+  flex-direction: column
+  justify-content: space-between
+  align-items: flex-start
   grid-column: 3/4
   grid-row: 2/4
   background-color: $light
   border-radius: 10px
   width: 100%
   height: 100%
+  padding: 19px 26px 25px 25px
+  overflow: hidden
+  &__bg
+    position: absolute
+    top: 0
+    left: 0
+    right: 0
+    bottom: 0
+    width: inherit
+    height: inherit
+    z-index: 0
+    background-image: url(../img/grid/popular-bg.jpg)
+    background-size: cover
+    background-position: center
+  &::after
+    content: ''
+    position: absolute
+    top: 0
+    bottom: 0
+    left: 0
+    right: 0
+    background-color: #40303D
+    opacity: 0.35
+    z-index: 0
+  &__sticker
+    padding: 5px 12px
+    background-color: #3DC47E
+    color: $light
+    border-radius: 3px
+    position: relative
+    z-index: 1
+  &-text
+    margin-bottom: 27px
+    margin-top: auto
+    position: relative
+    z-index: 1
+    &__theme
+      display: block
+      font-weight: 900
+      font-size: 12px
+      line-height: 15px
+      letter-spacing: 0.5px
+      text-transform: uppercase
+      color: #E7D9FF
+    &__title
+      display: block
+      text-decoration: none
+      font-family: Roboto Slab
+      font-style: normal
+      font-weight: bold
+      font-size: 16px
+      line-height: 25px
+      letter-spacing: 0.5px
+      text-transform: uppercase
+      color: $light
+      margin-top: 23px
+      transition: 0.2s
+      &:hover
+        opacity: 0.5
+  &-user
+    display: flex
+    align-items: center
+    position: relative
+    z-index: 1
+    &__image
+      height: 45px
+      width: 45px
+      border-radius: 50%
+      margin-right: 10px
+    &__name
+      display: block
+      font-style: normal
+      font-weight: normal
+      font-size: 14px
+      line-height: 20px
+      color: $light
+      mix-blend-mode: normal
+      opacity: 0.85
+      margin-bottom: 2px
+    &__text
+      display: flex
+      flex-direction: column
+      align-items: flex-start
+
+.info
+  display: flex
+  flex-wrap: wrap
+  align-items: center
+  justify-content: flex-start
+  font-style: normal
+  font-weight: normal
+  font-size: 12px
+  line-height: 15px
+  color: $light
+  mix-blend-mode: normal
+  opacity: 0.4
+  &>*
+    &:not(:last-child)
+      margin-right: 7px

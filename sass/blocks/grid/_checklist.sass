@@ -1,7 +1,67 @@
 .checklist
+  position: relative
+  display: flex
+  align-items: center
+  flex-direction: column
+  justify-content: space-between
   grid-column: 4/5
   grid-row: 2/3
   background-color: $light
   border-radius: 10px
   width: 100%
   height: 100%
+  background-color: #3BBDC4
+  &::after
+    content: ''
+    display: block
+    width: 56px
+    height: 72px
+    background-image: url(../img/grid/File.svg)
+    background-repeat: no-repeat
+    background-size: cover
+    background-position: center
+    position: absolute
+    top: 24px
+    right: 22px
+  &-info
+    padding: 25px 25px 0 25px
+    position: relative
+    z-index: 1
+  &__title
+    font-family: Roboto Slab
+    font-style: normal
+    font-weight: bold
+    font-size: 16px
+    line-height: 25px
+    display: flex
+    align-items: center
+    color: $light
+    margin: 0
+  &__subtitle
+    font-style: normal
+    font-weight: normal
+    font-size: 14px
+    line-height: 20px
+    display: flex
+    align-items: center
+    color: #C1F4F5
+  &__format
+    text-transform: uppercase
+  &__button
+    width: 100%
+    display: flex
+    align-items: center
+    justify-content: center
+    background-color: transparent
+    border: none
+    font-style: normal
+    font-weight: 900
+    font-size: 14px
+    line-height: 20px
+    display: flex
+    align-items: center
+    color: $light
+    padding: 12px 0
+    border-top: 1px solid $line-color
+  &__download
+    margin-right: 10px

@@ -1,7 +1,12 @@
 .header
+  position: absolute
+  top: 0
+  left: 0
+  right: 0
+  z-index: 2
   background-color: $dark
   height: 70px
-  transition: 0.5s
+  transition: 1s
   &-wrapper
     display: flex
     align-items: center
@@ -51,12 +56,13 @@
       cursor: pointer
 
   &--cover
-    position: fixed
+    position: absolute
     right: 0
     left: 0
     top: 0
     height: 100%
     z-index: 1000
+    transition: 1s
 
 
 .search
