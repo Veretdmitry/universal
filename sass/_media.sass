@@ -81,9 +81,6 @@
         margin-bottom: 40px
       &__text
         max-width: 100%
-    &-button
-      &:hover
-        opacity: 1
     &-cards
       flex-direction: row
       max-height: inherit
@@ -137,8 +134,10 @@
     grid-row: 6/8
     &__item
       padding: 25px 25px 30px 25px
-  
-  
+  .button-link
+    &:hover
+      opacity: 1
+    
 @media (max-width:768px)
   .container
     width: 550px
@@ -228,6 +227,9 @@
   .social
     grid-column: 4/7
     grid-row: 9/10
+  .new-article
+    &__title
+      font-size: 25px
 
     
 @media (max-width: 576px)
