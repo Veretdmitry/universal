@@ -43,5 +43,20 @@ $(function () {
     else 
     $(this).parent().find('.likes__counter').text(parseInt($(this).parent().find('.likes__counter').text(),10) -1);
   });
+  
+// slider iinitialisation
+  var usefullSwiper = new Swiper('.usefull-slider', {
+    // Optional parameters
+    direction: 'horizontal',
+    loop: false,
+
+    // If we need pagination
+    pagination: {
+      el: '.swiper-pagination',
+      bulletClass: 'usefull-pagination__bullet',
+      bulletActiveClass: 'usefull-pagination__bullet--active',
+      clickable: true
+    },
+  })
 
 });

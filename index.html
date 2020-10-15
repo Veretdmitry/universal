@@ -6,6 +6,7 @@
   <title>Universal - Академия Фрилансеров</title>
   <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@700&display=swap"
     rel="stylesheet">
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
   <link rel="stylesheet" href="css/fonts.css">
   <link rel="stylesheet" href="css/style.css">
 </head>
@@ -319,34 +320,34 @@
           <h2 class="tools__title">20+ инструментов для js-разработчика</h2>
         </a>
         <!-- /.tools -->
-        <div class="quotes">
-          <a href="articles.html" class="quotes__item">
-            <h2 class="quotes__title">Удачные референсы</h2>
-            <p class="quotes__description">Как выбрать подходящие исходники, если вы ищите идею для интерфейса</p>
+        <div class="quotes grid-quotes">
+          <a href="articles.html" class="quotes__item grid-quotes__item">
+            <h2 class="quotes__title grid-quotes__title">Удачные референсы</h2>
+            <p class="quotes__description grid-quotes__description">Как выбрать подходящие исходники, если вы ищите идею для интерфейса</p>
             <div class="comments">
               <span class="date">15 октября</span>
             </div>
           </a>
           <!-- /.quotes__item -->
-          <a href="articles.html" class="quotes__item">
-            <h2 class="quotes__title">Заказчики — мудаки?</h2>
-            <p class="quotes__description">Как защититься от бесконечных правок на этапе сдачи проекта</p>
+          <a href="articles.html" class="quotes__item grid-quotes__item">
+            <h2 class="quotes__title grid-quotes__title">Заказчики — мудаки?</h2>
+            <p class="quotes__description grid-quotes__title">Как защититься от бесконечных правок на этапе сдачи проекта</p>
             <div class="comments">
               <span class="date">20 октября</span>
             </div>
           </a>
           <!-- /.quotes__item -->
-          <a href="articles.html" class="quotes__item">
-            <h2 class="quotes__title">Работа без стресса — это...</h2>
-            <p class="quotes__description">Обустройте свое рабочее место так, чтобы не испытывать раздражение от скрипучего...</p>
+          <a href="articles.html" class="quotes__item grid-quotes__item">
+            <h2 class="quotes__title grid-quotes__title">Работа без стресса — это...</h2>
+            <p class="quotes__description grid-quotes__title">Обустройте свое рабочее место так, чтобы не испытывать раздражение от скрипучего...</p>
             <div class="comments">
               <span class="date">26 октября</span>
             </div>
           </a>
             <!-- /.quotes__item -->
-          <a href="articles.html" class="quotes__item">
-            <h2 class="quotes__title">Бесплатные методы...</h2>
-            <p class="quotes__description">Как не платить за софт, если у вас есть студенческий билет высшего учебного заведения</p>
+          <a href="articles.html" class="quotes__item grid-quotes__item">
+            <h2 class="quotes__title grid-quotes__title">Бесплатные методы...</h2>
+            <p class="quotes__description grid-quotes__title">Как не платить за софт, если у вас есть студенческий билет высшего учебного заведения</p>
             <div class="comments">
               <span class="date">13 октября</span>
             </div>
@@ -645,11 +646,143 @@
     </div>
   </section>
   <!-- /.news -->
+  <section class="usefull">
+    <div class="container">
+      <div class="usefull-wrapper">
+        <div class="swiper-container usefull-slider">
+          <!-- Additional required wrapper -->
+          <div class="swiper-wrapper">
+            <!-- Slides -->
+            <div class="swiper-slide usefull-slider__item">
+              <img src="img/usefull/usefull-slider-bg1.jpg" alt="image: usefull-slider-bg1" class="usefull-slider__bg">
+              <span class="usefull__sticker">Горячее</span>
+              <div class="usefull-slider__block">
+                <div class="usefull-user">
+                  <img src="img/usefull/user-avatar-1.png" alt="image: user-avatar-1" class="usefull-user__image">
+                  <span class="usefull-user__name">Оксана Пушкина</span>
+                  <span class="usefull-user__job-name">Фотограф</span>
+                </div>
+                <h2 class="usefull-slider__title">Выбор читателей: где удобнее работать фрилансеру</h2>
+                <a class="button-link usefull-slider__button">
+                  <img src="img/usefull/media.svg" alt="Icon: arrow" class="button-link__image">
+                  <span class="button-link__text">Читать статью</span>
+                  26
+                </a>
+              </div>
+            </div>
+            <div class="swiper-slide usefull-slider__item">
+              <img src="img/usefull/usefull-slider-bg1.jpg" alt="image: usefull-slider-bg1" class="usefull-slider__bg">
+              <span class="usefull__sticker">Актуальное</span>
+              <div class="usefull-slider__block">
+                <div class="usefull-user">
+                  <img src="img/usefull/user-avatar-2.jpg" alt="image: user-avatar-1" class="usefull-user__image">
+                  <span class="usefull-user__name">Юрий Мельник</span>
+                  <span class="usefull-user__job-name">Фотограф</span>
+                </div>
+                <h2 class="usefull-slider__title">Сказочные красоты авторов: личная подборка</h2>
+                <a href="articles.html" class="button-link usefull-slider__button">
+                  <img src="img/usefull/media.svg" alt="Icon: arrow" class="button-link__image">
+                  <span class="button-link__text">Читать статью</span>
+                  50
+                </a>
+              </div>
+            </div>
+            <div class="swiper-slide usefull-slider__item">
+              <img src="img/usefull/usefull-slider-bg1.jpg" alt="image: usefull-slider-bg1" class="usefull-slider__bg">
+              <span class="usefull__sticker">Горячее</span>
+              <div class="usefull-slider__block">
+                <div class="usefull-user">
+                  <img src="img/usefull/user-avatar-3.jpg" alt="image: user-avatar-1" class="usefull-user__image">
+                  <span class="usefull-user__name">Леонид КОзлов</span>
+                  <span class="usefull-user__job-name">Фотограф</span>
+                </div>
+                <h2 class="usefull-slider__title">Как грамотно упаковать своё портфолио...</h2>
+                <a href="articles.html" class="button-link usefull-slider__button">
+                  <img src="img/usefull/media.svg" alt="Icon: arrow" class="button-link__image">
+                  <span class="button-link__text">Читать статью</span>
+                  12
+                </a>
+              </div>
+            </div>
+            <div class="swiper-slide usefull-slider__item">
+              <img src="img/usefull/usefull-slider-bg1.jpg" alt="image: usefull-slider-bg1" class="usefull-slider__bg">
+              <span class="usefull__sticker">Горячее</span>
+              <div class="usefull-slider__block">
+                <div class="usefull-user">
+                  <img src="img/usefull/user-avatar-4.jpg" alt="image: user-avatar-1" class="usefull-user__image">
+                  <span class="usefull-user__name">Лилиан Валем</span>
+                  <span class="usefull-user__job-name">Фотограф</span>
+                </div>
+                <h2 class="usefull-slider__title">Китай: жизнь внутри бетонной коробки</h2>
+                <a class="button-link usefull-slider__button">
+                  <img src="img/usefull/media.svg" alt="Icon: arrow" class="button-link__image">
+                  <span class="button-link__text">Читать статью</span>
+                  100+
+                </a>
+              </div>
+            </div>
+            <div class="swiper-slide usefull-slider__item">
+              <img src="img/usefull/usefull-slider-bg1.jpg" alt="image: usefull-slider-bg1" class="usefull-slider__bg">
+              <span class="usefull__sticker">Горячее</span>
+              <div class="usefull-slider__block">
+                <div class="usefull-user">
+                  <img src="img/usefull/user-avatar-5.jpg" alt="image: user-avatar-1" class="usefull-user__image">
+                  <span class="usefull-user__name">Павел Емельянов</span>
+                  <span class="usefull-user__job-name">Фотограф</span>
+                </div>
+                <h2 class="usefull-slider__title">Основы грамотной экспозиции</h2>
+                <a href="articles.html" class="button-link usefull-slider__button">
+                  <img src="img/usefull/media.svg" alt="Icon: arrow" class="button-link__image">
+                  <span class="button-link__text">Читать статью</span>
+                  26
+                </a>
+              </div>
+            </div>
+          </div>
+          <!-- If we need pagination -->
+          <div class="swiper-pagination usefull-slider__pagination"></div>
+        </div>
+        <!-- /.usefull-slider -->
+        <div class="usefull-article">
+          <div class="usefull-article__text">
+            <span class="usefull-article__theme">Карьера</span>
+            <h2 class="usefull-article__title">Вопросы на собеседовании для джуна</h2>
+            <p class="usefull-article__description">Каверзные и не очень вопросы, которых боятся новички, когда идут на собеседование</p>
+            <a class="button-link usefull-article__button">
+              <span class="button-link__text">Читать статью</span>
+              <img src="img/tabs/Arrow.svg" alt="Icon: arrow" class="button-link__image">
+            </a>
+          </div>
+          <img src="img/usefull/usefull-article-bg.png" alt="image: usefull-article-bg" class="usefull-article__image">
+        </div>
+        <!-- /.usefull-article -->
+        <div class="quotes usefull-quotes">
+          <a href="articles.html" class="quotes__item">
+            <h2 class="quotes__title usefull-quotes__title">Удачные референсы</h2>
+            <p class="quotes__description">Как выбрать подходящие исходники, если вы ищите идею для интерфейса</p>
+            <div class="comments">
+              <span class="date">15 октября</span>
+            </div>
+          </a>
+          <!-- /.quotes__item -->
+          <a href="articles.html" class="quotes__item usefull-quotes__item">
+            <h2 class="quotes__title usefull-quotes__title">Заказчики — мудаки?</h2>
+            <p class="quotes__description usefull-quotes__description">Как защититься от бесконечных правок на этапе сдачи проекта</p>
+            <div class="comments">
+              <span class="date">20 октября</span>
+            </div>
+          </a>
+        </div>
+        <!-- /.usefull-quotes -->
+      </div>
+      <!-- /.usefull-wrapper -->
+    </div>
+    <!-- /.container -->
+  </section>
+<!-- /.usefull -->
 
 
-
-
-
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
   <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
   <script src="js/main.js"></script>
 </body>

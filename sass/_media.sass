@@ -96,6 +96,11 @@
     padding-top: 115px
     &-wrapper
       grid-template: 260px repeat(6, 170px)/ repeat(6, 1fr)
+    &-quotes
+      grid-column: 1/7
+      grid-row: 6/8
+      &__item
+        padding: 25px 25px 30px 25px
   .freshnews
     flex-wrap: wrap
     grid-column: span 6
@@ -129,11 +134,7 @@
   .social
     grid-column: 5/7
     grid-row: 5/6
-  .quotes
-    grid-column: 1/7
-    grid-row: 6/8
-    &__item
-      padding: 25px 25px 30px 25px
+
   .button-link
     &:hover
       opacity: 1
