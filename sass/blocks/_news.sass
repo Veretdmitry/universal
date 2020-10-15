@@ -1,0 +1,136 @@
+.news
+  background-color: #E5E5E5 
+  &-wrapper
+    padding: 60px 0
+    display: flex
+    align-items: flex-start
+  &-hot
+    background-color: #ffffff
+    border-radius: 10px
+    margin-right: 30px
+    max-width: 848px
+    &__item
+      position: relative
+      display: flex
+      justify-content: space-between
+      padding: 25px
+      &:not(:last-child)
+        border-bottom: 1px solid $line-color
+    &__info
+      display: flex
+      flex-direction: column
+      justify-content: space-between
+      padding: 5px 0
+    &__note
+      position: absolute
+      top: 25px
+      right: 25px
+    &__image
+      max-height: 195px
+      min-width: 336px
+      margin-right: 25px
+    &__title
+      font-family: Roboto Slab
+      font-style: normal
+      font-weight: bold
+      font-size: 20px
+      line-height: 25px
+      color: $dark
+      margin: 0
+      margin-top: 15px
+    &__description
+      font-style: normal
+      font-weight: normal
+      font-size: 14px
+      line-height: 20px
+      color: $tabs-text-color
+      margin: 0
+      margin-top: 10px
+      margin-bottom: auto
+    &__theme
+      font-style: normal
+      font-weight: 900
+      font-size: 12px
+      line-height: 15px
+      letter-spacing: 0.5px
+      text-transform: uppercase
+      &--news
+        color: #4592FF
+      &--opinions
+        color: #3BBDC4
+      &--hot
+        color: #FF4F52
+      &--collections
+        color: #AC8EE3
+  &-recently
+    background-color: #ffffff
+    border-radius: 10px
+    display: flex
+    flex-direction: column
+    align-items: center
+    &__wrapper
+      padding: 0 25px
+      border-top: 1px solid $line-color
+      border-bottom: 1px solid $line-color
+    &__card
+      position: relative
+      display: flex
+      padding: 17px 0
+      &:not(:last-child)
+        border-bottom: 1px solid $line-color
+    &__info
+      display: flex
+      flex-direction: column
+      justify-content: space-between
+    &__number
+      position: absolute
+      top: 17px
+      right: 0
+    &__image
+      width: 60px
+      height: 60px
+      margin-right: 10px
+    &__text
+      font-style: normal
+      font-weight: normal
+      font-size: 14px
+      line-height: 20px
+      color: $tabs-text-color
+      margin: 0
+    &__theme
+      display: inline-block
+      font-style: normal
+      font-weight: 900
+      font-size: 14px
+      line-height: 20px
+      letter-spacing: 0.5px
+      color: $dark
+      text-transform: uppercase
+      margin: 20px 0
+      
+  &__info 
+    color: $comment-icons
+
+
+.readmore
+  font-style: normal
+  font-weight: 900
+  font-size: 14px
+  line-height: 20px
+  color: $dark
+  padding: 11px 0
+  width: 100%
+  text-align: center
+  border-bottom-left-radius: 10px
+  border-bottom-right-radius: 10px
+  &:hover
+    background-color: darken(#fff, 3%)
+.note
+  cursor: pointer
+  &__mark
+    fill: #BCBFC2
+    transition: 0.2s
+    &:hover
+      fill: #FF4F52
+    &--active
+      fill: #FF4F52 

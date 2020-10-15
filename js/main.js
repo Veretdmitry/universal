@@ -31,6 +31,17 @@ $(function () {
     $('.lines').toggleClass('lines_mobile');
     $('.tabs').toggleClass('tabs--mobile');
   });
-
+// note
+  $('.note__mark').on('click', function(){
+    $(this).toggleClass('note__mark--active');
+  });
+// likes
+  $('.likes__icon').on('click', function(){
+    $(this).toggleClass('likes__icon--active');
+    if ($(this).hasClass('likes__icon--active')) {
+    $(this).parent().find('.likes__counter').text(parseInt($(this).parent().find('.likes__counter').text(),10) + 1);}
+    else 
+    $(this).parent().find('.likes__counter').text(parseInt($(this).parent().find('.likes__counter').text(),10) -1);
+  });
 
 });
