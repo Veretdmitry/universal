@@ -165,6 +165,7 @@
       &__note
         top: 5px
         right: 0
+
       &__description
         margin-bottom: 10px
   .usefull
@@ -177,16 +178,40 @@
       grid-template-columns: 1.5fr 1fr
     &-quotes
       grid-template:repeat(2, 170px) / 1fr
+    &-pagination
+      &__bullet
+        &:hover
+          background-color: darken(#D9DADB,40%)
   .footer
+    &-top
+      &__link
+        &:hover
+          color: $tabs-text-color
     &-bottom
       &__list
         margin: 0 auto
+      &__link
+        color: $dark
+      
     &__social
       &-link
         width: 30px
         height: 30px
         &:not(:last-child)
           margin-right: 10px
+  .note
+    &__mark
+      &:hover
+        fill: #BCBFC2
+  .subscribe
+    &__button
+      &:hover
+        background-color:#4592FF
+  .social
+    &-links
+      &__item
+        &:hover
+          opacity: 1
 
 
 
