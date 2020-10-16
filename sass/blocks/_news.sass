@@ -10,25 +10,33 @@
     margin-right: 30px
     max-width: 848px
     &__item
-      position: relative
       display: flex
       justify-content: space-between
+      
       padding: 25px
       &:not(:last-child)
         border-bottom: 1px solid $line-color
     &__info
+      position: relative
       display: flex
       flex-direction: column
       justify-content: space-between
       padding: 5px 0
     &__note
       position: absolute
-      top: 25px
-      right: 25px
-    &__image
-      max-height: 195px
+      top: 0
+      right: 0
+    &__wrapper
+      max-width: 336px
       min-width: 336px
-      margin-right: 25px
+      min-height: 195px
+      margin-right: 35px
+    &__image
+      width: 100%
+      height: 100%
+      object-fit: cover
+    
+
     &__title
       font-family: Roboto Slab
       font-style: normal
@@ -72,9 +80,12 @@
       padding: 0 25px
       border-top: 1px solid $line-color
       border-bottom: 1px solid $line-color
+      display: flex
+      flex-direction: column
     &__card
       position: relative
       display: flex
+      align-items: flex-start
       padding: 17px 0
       &:not(:last-child)
         border-bottom: 1px solid $line-color

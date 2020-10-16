@@ -31,6 +31,17 @@ $(function () {
     $('.lines').toggleClass('lines_mobile');
     $('.tabs').toggleClass('tabs--mobile');
   });
+// tags hover
+var tagsText = '';
+  if ($(window).width() > 992) {
+    $('.tags-block__item').on('mouseenter', function(){
+      tagsText=$(this).text();
+      $(this).text("Hover tag");
+    });
+    $('.tags-block__item').on('mouseleave', function(){
+      $(this).text(tagsText);
+    });
+  }; 
 // note
   $('.note__mark').on('click', function(){
     $(this).toggleClass('note__mark--active');

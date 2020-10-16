@@ -1,0 +1,97 @@
+.footer
+  background-color: $bg-light-color
+  &-top
+    display: flex
+    align-items: flex-start
+    justify-content: space-between
+    padding-bottom: 64px
+  &__nav
+    width: 100%
+    padding-top: 30px
+    &--news
+      border-top: 5px solid #FF4F52
+    &--articles
+      border-top: 5px solid #AC8EE3
+    &--videolesson
+      border-top: 5px solid #4592FF
+    &--courses
+      border-top: 5px solid #FFA34D
+    &--info
+      border-top: 5px solid #3DC47E
+    &--categories
+      border-top: 5px solid #6E99AE
+  &-nav
+    &__title
+      display: inline-block
+      font-style: normal
+      font-weight: 900
+      font-size: 14px
+      line-height: 20px
+      color: $dark
+      margin-bottom: 25px
+  &-list
+    &__item
+      &:not(:last-child)
+        margin-bottom: 15px
+    &__link
+      font-style: normal
+      font-weight: normal
+      font-size: 14px
+      line-height: 20px
+      color: $tabs-text-color
+      transition: 0.2s
+      &:hover
+        color: #000000
+  &-bottom
+    display: flex
+    align-items: center
+    justify-content: space-between
+    padding: 30px 0 29px 0
+    border-top: 1px solid $line-color
+    border-bottom: 1px solid $line-color
+    &__list
+      display: flex
+      margin-left: 30px
+      margin-right: auto
+      &-item
+        &:not(:last-child)
+          margin-right: 30px
+    &__link
+      font-style: normal
+      font-weight: 900
+      font-size: 14px
+      line-height: 20px
+      letter-spacing: 0.5px
+      text-transform: uppercase
+      color: $dark
+      padding-bottom: 5px
+      transition: 0.2s
+      &:hover
+        color: lighten($dark, 20%)
+  &__social
+    &-link
+      height: 40px
+      width: 40px
+      &:not(:last-child)
+        margin-right: 15px
+  &-company
+    display: flex
+    align-items: flex-start
+    justify-content: space-between
+    padding: 40px 0 55px 0
+    &__description
+      max-width: 750px
+      font-style: normal
+      font-weight: normal
+      font-size: 14px
+      line-height: 20px
+      color: $tabs-text-color
+      margin: 0
+    &__info
+      font-style: normal
+      font-weight: normal
+      font-size: 14px
+      line-height: 20px
+      color: $tabs-text-color
+
+

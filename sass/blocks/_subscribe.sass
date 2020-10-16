@@ -1,0 +1,54 @@
+.subscribe
+  background-color: $bg-light-color
+  &-wrapper
+    display: flex
+    flex-direction: column
+    align-items: center
+    padding: 60px 0 70px 0
+  &__title
+    font-family: Roboto Slab
+    font-style: normal
+    font-weight: bold
+    font-size: 40px
+    line-height: 50px
+    color: $dark
+    margin: 0
+    margin-bottom: 15px
+  &__form
+    height: 40px  
+    display: flex
+    align-items: center
+  &__input
+    width: 313px
+    height: 100%  
+    padding: 10px 0
+    font-style: normal
+    font-weight: normal
+    font-size: 14px
+    line-height: 20px
+    border: 1px solid $line-color
+    border-radius: 5px
+    background-color: transparent
+    padding-left: 15px
+    padding-right: 15px
+    color: $tabs-text-color
+    margin-right: 10px
+    &:focus
+      outline: none
+  &__button
+    font-style: normal
+    font-weight: 900
+    font-size: 14px
+    line-height: 140%
+    height: 100%
+    color: $light
+    background-color: #4592FF
+    border-radius: 20px
+    padding: 10px 25px
+    border:   none
+    cursor: pointer
+    transition: 0.2s
+    &:hover
+      background-color: darken(#4592FF, 10%)
+    &:focus
+      outline: none
