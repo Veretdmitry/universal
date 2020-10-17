@@ -1,0 +1,101 @@
+.text
+  &-wrapper
+    position: relative
+    &--before
+      padding-top: 60px
+    &__text
+      max-width: 623px
+      font-style: normal
+      font-weight: normal
+      font-size: 18px
+      line-height: 30px
+      color: $tabs-text-color
+      margin: 0
+      margin-bottom: 30px
+      &-float
+        &:first-letter
+          font-size: 100px
+          line-height: 45px
+          color: #4592FF
+          float: left
+          margin-top: 20px
+          margin-left: -8px
+    &__title
+      max-width: 623px
+      font-family: Roboto Slab
+      font-style: normal
+      font-weight: bold
+      font-size: 25px
+      line-height: 30px
+      color: $dark
+      margin: 30px 0
+    &__quote
+      position: relative
+      margin: 65px 0 30px 0
+      &::before
+        content: ''
+        display: block
+        width: 70px
+        height: 70px
+        position: absolute
+        background-image: url(../img/articles/Quote.svg)
+        background-position: center
+        background-size: cover
+        background-repeat: no-repeat
+        top: -20px
+        left: -20px
+        z-index: -1 
+  &-slider
+    margin-top: 45px
+    margin-bottom: 30px
+    background-color: #cccccc
+    border-radius: 10px
+    overflow: hidden
+
+.adv
+  position: absolute
+  right: 0
+  top: 150px
+  display: flex
+  flex-direction: column
+  max-width: 263px
+  &__theme
+    font-family: Roboto Slab
+    font-style: normal
+    font-weight: bold
+    font-size: 20px
+    line-height: 25px
+    color: $dark
+    margin-bottom: 20px
+  &__title
+    font-family: Roboto Slab
+    font-style: normal
+    font-weight: bold
+    font-size: 16px
+    line-height: 25px
+    margin: 0
+    margin-top: 15px  
+    margin-bottom: 5px
+  &__description
+    font-style: normal
+    font-weight: normal
+    font-size: 14px
+    line-height: 20px
+    color: $tabs-text-color
+    margin: 0
+    margin-bottom: 20px
+  &__image
+    border-radius: 10px
+
+.eyes
+  display: flex
+  align-items: center
+  &__icon
+    margin-right: 5px
+  &--dark
+    color: $comment-icons
+
+
+      
+        
+        

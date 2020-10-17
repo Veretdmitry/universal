@@ -27,7 +27,9 @@ $(function () {
     $('.header-menu').toggleClass('header-menu_mobile');
     $('.search').toggleClass('search_mobile');
     $('.header__logo').toggleClass('header__logo--mobile');
-    $('.header__menu-button').toggleClass('header__menu-button_click');
+    if ($(this).hasClass('header__menu-button--light'))
+      {$('.header__menu-button').toggleClass('header__menu-button_click--light');}
+      else {$('.header__menu-button').toggleClass('header__menu-button_click--dark');}
     $('.lines').toggleClass('lines_mobile');
     $('.tabs').toggleClass('tabs--mobile');
   });

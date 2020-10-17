@@ -259,16 +259,26 @@
         display: block
         order: 3
         &_click
-          width: 30px
-          height: 30px
-          background-image: url(../img/header/up-arrow.svg)
-          background-repeat: no-repeat
-          background-size: cover
+          &--light
+            width: 30px
+            height: 30px
+            background-image: url(../img/header/up-arrow.svg)
+            background-repeat: no-repeat
+            background-size: cover
+          &--dark
+            width: 30px
+            height: 30px
+            background-image: url(../img/header/up-arrow-dark.svg)
+            background-repeat: no-repeat
+            background-size: cover
 
     &__search
       margin-top: 30px
       margin-bottom: 20px
   .lines
+    &__item
+      &--dark
+        background-color: $comment-icons
     &_mobile
       display: none
   .search
