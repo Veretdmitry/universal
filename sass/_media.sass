@@ -153,6 +153,12 @@
   .news
     &-hot
       max-width: 60%
+      &__link
+        &:hover
+          .news
+            &-hot
+              &__title, &__description
+                opacity: 1
       &__item
         flex-direction: column
       &__info
@@ -192,6 +198,11 @@
         margin: 0 auto
       &__link
         color: $dark
+    &-company
+      flex-direction: column
+      align-item: flex-start
+      &__info
+        margin-top: 20px
       
     &__social
       &-link
@@ -212,6 +223,10 @@
       &__item
         &:hover
           opacity: 1
+  .thankyou
+    &__button
+      &:hover
+        background-color: $blue
 
 
 
@@ -335,23 +350,27 @@
         flex-basis: 48%
   .usefull
     &-wrapper
-      grid-template: repeat(6, 170px) / 1fr
+      grid-template: repeat(5, 170px) / 1fr 1fr
     &-article
       grid-row: 4/6
+      padding-right: 35px
+      padding-bottom: 35px
       &__text
         align-items: center
+        max-width: 100%
       &__title
-        font-size: 30px
+        font-size: 25px
         text-align: center
       &__description
-        font-size: 20px
+        font-size: 15px
         text-align: center
         margin-top: 30px
     &-slider
       grid-row: span 3
+      grid-column: span 2
     &-quotes
-      grid-template: 170px / repeat(2, 1fr)
-      grid-row: 6/7
+      grid-template: repeat(2, 170px) / 1fr
+      grid-row: 4/6
   .subscribe
     &-wrapper
       padding: 30px 0
@@ -385,10 +404,17 @@
       padding-bottom: 30px
     &-nav
       flex-basis: 33%
-      margin-bottom: 10px
+      margin-bottom: 30px
       padding-top: 5px
- 
-
+      &__title
+        margin-bottom: 15px
+    &-list
+      &__item
+        &:not(:last-child)
+          margin-bottom: 10px
+  .thankyou
+    &__title
+      font-size: 30px
 
     
     
@@ -414,9 +440,10 @@
         border-top: 1px solid $line-color
   .grid
     &-wrapper
-      grid-template: 520px repeat(13, 170px) / 1fr
+      grid-template: 520px repeat(6, minmax(170px, min-content)) min-content repeat(5, minmax(170px, min-content)) / 1fr
   .freshnews
     grid-column: span 1
+    grid-row: 1/2
     padding: 0
     &__item
       flex-basis: 100%
@@ -451,17 +478,17 @@
     grid-row: 6/8
   .tags
     grid-column: span 1
-    grid-row: 8/10
+    grid-row: 8/9
   .grid-quotes
     grid-template: repeat(4, 170px) / 1fr
     grid-column: span 1
-    grid-row: 10/13
+    grid-row: 9/12
   .checklist
     grid-column: span 1
-    grid-row: 13/14
+    grid-row: 12/13
   .social
     grid-column: span 1
-    grid-row: 14/15
+    grid-row: 13/14
   .news
     &-recently
       &__wrapper
@@ -472,9 +499,18 @@
         font-size: 16px
   .usefull
     &-wrapper
-      grid-template-rows: repeat(5, 170px) min-content
+      grid-template: repeat(5, 170px) min-content / 1fr
+      column-gap: 0
+    &-article
+      grid-row: 4/6
+      grid-column: span 1
     &-quotes
+      grid-column: span 1
+      grid-row: 6/7
       grid-template: repeat(2,170px) / 1fr
+    &-slider
+      &__title
+        font-size: 30px
   .subscribe
     &__title
       font-size: 16px

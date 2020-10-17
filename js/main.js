@@ -31,17 +31,8 @@ $(function () {
     $('.lines').toggleClass('lines_mobile');
     $('.tabs').toggleClass('tabs--mobile');
   });
-// tags hover
-var tagsText = '';
-  if ($(window).width() > 992) {
-    $('.tags-block__item').on('mouseenter', function(){
-      tagsText=$(this).text();
-      $(this).text("Hover tag");
-    });
-    $('.tags-block__item').on('mouseleave', function(){
-      $(this).text(tagsText);
-    });
-  }; 
+
+
 // note
   $('.note__mark').on('click', function(){
     $(this).toggleClass('note__mark--active');
@@ -55,12 +46,18 @@ var tagsText = '';
     $(this).parent().find('.likes__counter').text(parseInt($(this).parent().find('.likes__counter').text(),10) -1);
   });
   
-// slider iinitialisation
+// slider initialisation
   var usefullSwiper = new Swiper('.usefull-slider', {
     // Optional parameters
     direction: 'horizontal',
     loop: false,
-
+    autoplay: {
+    delay: 3000,
+    },
+    keyboard: {
+      enabled: true,
+      onlyInViewport: false,
+    },
     // If we need pagination
     pagination: {
       el: '.swiper-pagination',

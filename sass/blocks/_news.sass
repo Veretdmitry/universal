@@ -9,6 +9,15 @@
     border-radius: 10px
     margin-right: 30px
     max-width: 848px
+    &__link
+      display: block
+      margin-top: 0
+      margin-bottom: auto
+      &:hover
+        .news
+          &-hot
+            &__title, &__description
+              opacity: 0.9
     &__item
       display: flex
       justify-content: space-between
@@ -22,6 +31,7 @@
       flex-direction: column
       justify-content: space-between
       padding: 5px 0
+
     &__note
       position: absolute
       top: 0
@@ -54,7 +64,7 @@
       color: $tabs-text-color
       margin: 0
       margin-top: 10px
-      margin-bottom: auto
+
     &__theme
       font-style: normal
       font-weight: 900
