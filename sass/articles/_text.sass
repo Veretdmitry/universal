@@ -12,6 +12,8 @@
       color: $tabs-text-color
       margin: 0
       margin-bottom: 30px
+      &:last-child
+        margin-bottom: 15px
       &-float
         &:first-letter
           font-size: 100px
@@ -51,6 +53,21 @@
     background-color: #cccccc
     border-radius: 10px
     overflow: hidden
+  &-tags
+    padding: 30px 0
+    &__item
+      display: inline-block
+      font-style: normal
+      font-weight: 900
+      font-size: 14px
+      line-height: 20px
+      color: $dark
+      padding: 4px 14px
+      border: 1px solid $line-color
+      border-radius: 5px
+      cursor: pointer
+      &:not(:last-child)
+        margin-right: 10px
 
 .adv
   position: absolute
@@ -94,6 +111,7 @@
     margin-right: 5px
   &--dark
     color: $comment-icons
+
 
 
       

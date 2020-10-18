@@ -48,7 +48,7 @@ $(function () {
     $(this).parent().find('.likes__counter').text(parseInt($(this).parent().find('.likes__counter').text(),10) -1);
   });
   
-// slider initialisation
+// usefullslider initialisation
   var usefullSwiper = new Swiper('.usefull-slider', {
     // Optional parameters
     direction: 'horizontal',
@@ -66,6 +66,25 @@ $(function () {
       bulletClass: 'usefull-pagination__bullet',
       bulletActiveClass: 'usefull-pagination__bullet--active',
       clickable: true
+    },
+  })
+// usefullslider initialisation
+  var textSwiper = new Swiper('.text-slider__top', {
+    // Optional parameters
+    direction: 'horizontal',
+    loop: true,
+    speed: 600,
+    autoplay: {
+    delay: 5000,
+    },
+    keyboard: {
+      enabled: true,
+      onlyInViewport: false,
+    },
+  // Navigation arrows
+    navigation: {
+      nextEl: '.text-slider__top-button_next',
+      prevEl: '.text-slider__top-button_prev',
     },
   })
 

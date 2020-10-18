@@ -1,0 +1,44 @@
+.repost
+  &-wrapper
+    padding: 30px 0
+    border-top: 1px solid $line-color
+    max-width: 623px
+  &__title
+    font-family: Roboto Slab
+    font-style: normal
+    font-weight: bold
+    font-size: 25px
+    line-height: 30px
+    margin: 0
+    margin-bottom: 25px
+  &-social
+    display: flex
+    align-items: center
+    justify-content: flex-start
+    font-style: normal
+    font-weight: normal
+    font-size: 14px
+    line-height: 20px
+    &__item
+      display: flex
+      align-items: center
+      justify-content: space-between
+      color: $light
+      padding: 10px 20px
+      background-color: $blue
+      border-radius: 20px
+      transition: 0.2s
+      &:not(:last-child)
+        margin-right: 14px
+      &:hover
+        background-color: darken($blue, 10%)
+        
+    &__icon
+      fill: $light
+      margin-right: 8px
+    &__counter
+      color: #BBC6FF
+    &__text
+      font-weight: 900
+      margin-right: 8px
+
