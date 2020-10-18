@@ -139,4 +139,6 @@ $(function () {
       $(this).removeClass('comment-item--disabled');
     });
   });
+// slow scroll
+
 });
