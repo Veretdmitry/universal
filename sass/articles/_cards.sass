@@ -6,13 +6,15 @@
       display: flex
       justify-content: space-between
     &__item
-      width: 263px
+      max-width: 263px
       display: flex
-      flex-direction: column
+      flex-direction: column     
+      
     &__image
       width: 100%
       height: 180px
       border-radius: 10px
+      cursor: pointer
     &__title
       font-family: Roboto Slab
       font-style: normal
@@ -21,4 +23,8 @@
       line-height: 25px
       color: $dark
       margin: 15px 0
+      cursor: pointer
+      transition: 0.2s
+      &:hover
+        opacity: 0.9
       

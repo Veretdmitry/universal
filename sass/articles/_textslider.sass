@@ -16,6 +16,9 @@
         transform: translateY(-50%)
         cursor: pointer
         z-index: 5
+        transition: 0.2s
+        &:hover
+          opacity: 0.8         
         &_next
           right: 35px
         &_prev
@@ -43,6 +46,12 @@
     align-items: center
     border-left: 1px solid $line-color
     padding: 12px 35px 13px 30px
+    cursor: pointer
+    transition: 0.2s
+    &:hover
+      .text-user
+        &__block
+          opacity: 0.8
     &__image
       height: 40px
       width: 40px

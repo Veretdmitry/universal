@@ -189,15 +189,17 @@
         &:hover
           background-color: darken(#D9DADB,40%)
   .footer
-    &-top
+    &-list
       &__link
         &:hover
-          color: $tabs-text-color
+          color: $tabs-text-color 
     &-bottom
       &__list
         margin: 0 auto
       &__link
         color: $dark
+        &:hover
+          color: $dark
     &-company
       flex-direction: column
       align-item: flex-start
@@ -383,7 +385,7 @@
       grid-row: 4/6
   .subscribe
     &-wrapper
-      padding: 30px 0
+      padding: 30px 0 70px 0
     &__title
       font-size: 30px
     &__input

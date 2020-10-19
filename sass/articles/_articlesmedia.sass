@@ -1,0 +1,194 @@
+@media (max-width:1200px)
+  .articles
+    &-cards
+      &__item
+        max-width: 220px
+
+@media (max-width: 992px)
+  .adv
+    display: none
+  .author
+    position: static
+    float: right
+    margin-top: 60px
+    margin-left: 15px
+  .articles
+    &-wrapper
+      width: 100%
+    &-cards
+      &__wrapper
+        flex-wrap: wrap
+      &__image
+        height: 220px
+      &__item
+        flex-basis: 45%
+        max-width: 100%
+        margin-bottom: 30px
+      &__title
+        &:hover
+          opacity: 1
+  .main
+    &-bottom
+      &__note
+        left: -30px
+    &__links
+      &-item
+        &:hover
+          opacity: 1
+  .up
+    display: none
+    &:hover
+      background-color: $blue
+  .author
+    &__link
+      &:hover
+        opacity: 1
+  .text
+    &-user
+      &:hover
+        .text-user
+          &__block
+            opacity: 1
+    &-slider
+      &__top
+        &-button
+          &:hover
+            opacity: 1
+  .comment
+    &-wrapper
+      max-width: 100%
+    &-loadmore
+      &:hover
+        opacity: 1
+    &-top
+      &__button
+        &:hover
+          opacity: 1
+    &-item
+      &__name
+        &:hover
+          opacity: 1
+  .repost
+    &-social
+      &__item
+        &:hover
+          background-color: $blue
+  .header
+    &-menu
+      &__link
+        &--dark
+          &:hover:after,
+          &:focus:after 
+            width: 0%
+          
+
+@media (max-width: 768px)
+  .text
+    &-wrapper
+      max-width: 100%
+    &-slider
+      &__top
+        height: 450px
+  .main
+    &-bottom
+      &__title
+        font-size: 45px
+  .comment
+    padding-top: 50px
+    &-top
+      align-items: stretch
+      &__title
+        font-size: 30px
+      &__counter
+        font-size: 30px
+  .opinion
+    padding-bottom: 0
+
+
+@media (max-width: 576px)
+  .main
+    padding-top: 90px
+    &-bottom
+      margin-top: 15px
+      &__title
+        font-size: 35px
+    &__links
+      top: -30px
+      transform: translateY(-100%)
+      left: 0
+  .author
+    position: static
+    float: none
+    margin: 0 auto
+    margin-top: 30px
+  .text
+    text-align: justify
+    &-wrapper
+      &--before
+        padding-top: 30px
+    &-slider
+      &__bottom
+        flex-direction: column
+        align-items: flex-start
+        padding: 25px
+      &__text
+        padding: 0
+      &__top
+        height: 350px
+    &-user
+      order: -1
+      border: none
+      padding: 0
+      margin-bottom: 10px
+  .articles
+    &-cards
+      padding-bottom: 40px
+      &__image
+        height: 180px
+  .comment
+    &-top
+      flex-wrap: wrap
+      &__button
+        max-width: 60%
+        flex-basis: 100%
+        margin-top: 10px
+    &-item
+      &__text
+        font-size: 12px
+        line-height: 16px
+  .opinion
+    &__form
+      margin-left: 0
+    &__message
+      &-block
+        &::before
+          display: none
+        &::after
+          display: none
+  .opinion__message-block
+    label.error
+      bottom: 25px
+      transform: translateY(100%)
+      right: -25px
+      max-width: 150px
+  .input-block
+    label
+      max-width: 100%
+  
+@media (max-width: 450px)
+  .articles
+    &-cards
+      flex-direction: column
+      &__item
+        flex-basis: 100%
+      &__image
+        height: 250px
+  .repost
+    &-social
+      flex-wrap: wrap
+      &__item
+        margin-bottom: 10px
+  .author
+    width: 100%
+
+        

@@ -45,9 +45,9 @@
     position: absolute
     right: 0
     top: 0
-    transform: translateY(-50%)
     display: flex
     align-items: center
+    cursor: pointer
     &-item
       display: flex
       align-items: center
@@ -56,6 +56,9 @@
       font-size: 14px
       line-height: 20px
       color: $light
+      cursor: pointer
+      &:hover
+        opacity: 0.8
       &:first-child
         margin-right: 30px
       &:nth-child(2)
@@ -156,3 +159,5 @@
     color: $dark
     border-top: 1px solid $line-color
     padding: 15px 0
+    &:hover
+      opacity: 0.9
