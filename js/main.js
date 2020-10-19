@@ -140,5 +140,41 @@ $(function () {
     });
   });
 // slow scroll
+	$('.up').click(function() {
+		$('html, body').animate({scrollTop: 0},1000);
+		return false;
+  });
+
+// Обработка форм
+ $('.subscribe__form').validate({
+  rules: {
+    email: {
+      required: true,
+      email: true
+    }
+  },
+  messages: {
+    email: {
+      required: "Пожалуйста укажите свой email",
+      email: "Ваша почта должна быть в формате name@domain.com"
+    }
+  }
+});
+ $('.opinion__form').validate({
+  rules: {
+    message: {
+      minlength: 100
+    }
+  },
+  messages: {
+    message: {
+      required: 'Напишите сообщение',
+      minlength: 'Сообщение должно быть не короче 100 символов',
+    }
+  }
+});
+
+
+
 
 });

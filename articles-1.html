@@ -72,11 +72,11 @@
           <img src="img/articles/Home.svg" alt="icon: home" class="main__icon">
           <span class="main__text">На главную</span>
         </a>
-        <a href="#" class="main__links-item">
+        <a href="#" class="main__links-item prev">
           <img src="img/articles/Arrow-prev.svg" alt="Icon: arrow-prev" class="main__icon">
           <span class="main__text">Назад</span>
         </a>
-        <a href="#" class="main__links-item">
+        <a href="#" class="main__links-item next">
           <span class="main__text">Вперед</span>
           <img src="img/articles/Arrow-next.svg" alt="Icon: arrow-next" class="main__icon">
         </a>
@@ -621,10 +621,10 @@
       <div class="articles-wrapper comment-wrapper">
         <div class="opinion-block">
 
-          <form action="#" class="opinion__form">
+          <form action="php/send.php" class="opinion__form" method="POST">
             <h2 class="opinion__title">Что вы думаете на этот счет?</h2>
             <div class="opinion__message-block">
-              <textarea class="opinion__message" name="textarea" id="textare" ></textarea>
+              <textarea class="opinion__message" name="message" required></textarea>
             </div>          
             <button class="button-link opinion-link">
               <span class="button-link__text">Отправить</span>
@@ -645,7 +645,9 @@
       <div class="subscribe-wrapper">
         <h2 class="subscribe__title">Подпишитесь на нашу рассылку</h2>
         <form action="php/send.php" class="subscribe__form" method="POST">
-          <input class="subscribe__input" type="email" placeholder="Email" name="email" required>
+          <div class="input-block">
+            <input class="subscribe__input" type="email" placeholder="Email" name="email" required>
+          </div>         
           <button class="subscribe__button">Подписаться</button>
         </form>
       </div>
@@ -754,12 +756,16 @@
     <!-- /.container -->
   </footer>
   <!-- /.footer -->
-  <a href="#" class="up"></a>
+  <a href="#" class="up up--light">
+    <img src="img/header/up-arrow.svg" alt="icon: up-arrow" class="up__image">
+  </a>
 
 
 
   <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
   <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.2/dist/jquery.validate.min.js"></script>
+  <script src="js/articles.js"></script>
   <script src="js/main.js"></script>
 </body>
 
