@@ -16,7 +16,7 @@
       line-height: 20px   
       color: $light
       opacity: 0.85
-      margin-top: 4px
+      margin-top: 8px
     &__job-name
       font-style: normal
       font-weight: normal
@@ -24,6 +24,7 @@
       line-height: 15px
       color: $light
       opacity: 0.4
+      margin-bottom: 2px
   &__sticker
     position: absolute
     top: 18px
@@ -39,7 +40,7 @@
     z-index: 3
   &-wrapper
     display: grid
-    grid-template:  repeat(2, 170px) min-content / repeat(2, 1fr)
+    grid-template:  repeat(2, 170px) minmax(170px, min-content) / repeat(2, 1fr)
     grid-gap: 30px
   &-slider
     grid-row: 1/4
@@ -97,8 +98,8 @@
       bottom: 46px !important
   &-pagination
     &__bullet 
-      width: 10px
-      height: 10px
+      width: 8px
+      height: 8px
       display: inline-block
       border-radius: 50%
       background-color: darken(#D9DADB,40%)

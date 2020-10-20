@@ -13,6 +13,8 @@
     justify-content: space-between
     border-radius: 10px
     overflow: hidden
+  &-button
+    display: inline-block
 
   &-menu
     display: flex
@@ -87,7 +89,7 @@
       font-style: normal
       font-weight: bold
       font-size: 40px
-      line-height: 50px
+      line-height: 125%
       display: flex
       align-items: center
       color: #FFFFFF
@@ -128,16 +130,20 @@
     overflow-y: scroll
     min-height: 570px
     &__item
-      min-height: 99px
+      height: 99px
       padding: 17px 25px 19px 25px
       border-top: 1px solid $line-color
       cursor: pointer
+      transition: 0.2s
       &--active
         background-color: #F5F5F5
+      &:hover
+        opacity: 0.9
     &__title
       font-weight: 900
       font-size: 12px
       line-height: 15px
+      letter-spacing: 0.5px
       text-transform: uppercase
       &--green
         color: #3DC47E

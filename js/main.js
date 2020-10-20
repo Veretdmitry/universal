@@ -7,7 +7,7 @@ $(function () {
   tabsItem.on('click', function(event) {
     var activeContent = $(this).attr('data-target');
     if ($(window).width() < 576) {
-      window.location = 'articles.html';
+      window.location = 'articles-1.html';
     }; 
     $(this).removeAttr('href');
     tabsContent.removeClass('tabs-content__item--active');

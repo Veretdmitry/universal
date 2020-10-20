@@ -3,6 +3,14 @@
     &-cards
       &__item
         max-width: 220px
+  .main
+    &-bottom
+      &__note
+        &--big
+          display: none
+        &--small
+          display: block
+          right: 200px
 
 @media (max-width: 992px)
   .adv
@@ -30,7 +38,8 @@
   .main
     &-bottom
       &__note
-        left: -30px
+        &--small
+          right: 0
     &__links
       &-item
         &:hover
@@ -51,6 +60,7 @@
             opacity: 1
     &-slider
       &__top
+        height: 450px
         &-button
           &:hover
             opacity: 1
@@ -63,7 +73,7 @@
     &-top
       &__button
         &:hover
-          opacity: 1
+          background-color: #fff
     &-item
       &__name
         &:hover
@@ -88,7 +98,7 @@
       max-width: 100%
     &-slider
       &__top
-        height: 450px
+        height: 350px
   .main
     &-bottom
       &__title
@@ -107,15 +117,17 @@
 
 @media (max-width: 576px)
   .main
-    padding-top: 90px
+    padding-top: 50px
+    &-top
+      flex-direction: column
+      align-items: flex-start
+    &__links
+      order: -2
+      margin-bottom: 20px
     &-bottom
       margin-top: 15px
       &__title
         font-size: 35px
-    &__links
-      top: -30px
-      transform: translateY(-100%)
-      left: 0
   .author
     position: static
     float: none
@@ -134,7 +146,7 @@
       &__text
         padding: 0
       &__top
-        height: 350px
+        height: 300px
     &-user
       order: -1
       border: none
@@ -153,9 +165,12 @@
         flex-basis: 100%
         margin-top: 10px
     &-item
-      &__text
-        font-size: 12px
-        line-height: 16px
+      &__image
+        min-width: 60px
+        max-width: 60px
+        height: 60px
+      &--sub
+        padding-left: 45px
   .opinion
     &__form
       margin-left: 0
@@ -176,6 +191,31 @@
       max-width: 100%
   
 @media (max-width: 450px)
+  .main
+    &-bottom
+      &__title
+        font-size: 25px
+      &__text
+        font-size: 14px
+  .text
+    &-wrapper
+      &__text
+        font-size: 14px
+        margin-bottom: 20px
+        &-float
+          &::first-letter
+            margin-top: 12px
+            margin-left: -6px
+            font-size: 80px
+      &__title
+        font-size: 18px
+      &__quote
+        margin-top: 30px
+    &-slider
+      &__top
+        height: 250px
+    &-tags
+      padding: 20px 0
   .articles
     &-cards
       flex-direction: column
