@@ -2,7 +2,7 @@ $(function () {
   var tabsItem = $('.tabs-cards__item');
   var tabsContent = $('.tabs-content__item');
   tabsContent.find('.tabs-content__title, .tabs-button').on('click', function(){
-    window.location = 'articles.html';
+    window.location = 'articles-1.html';
   });
   tabsItem.on('click', function(event) {
     var activeContent = $(this).attr('data-target');
